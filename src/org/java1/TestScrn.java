@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestScrn {
 	public static void main(String[] args) throws IOException {
-		WebDriver f= new FirefoxDriver();//upcasting webdirver parent  ---> firefox child
+		WebDriver f= new FirefoxDriver();//upcasting webdirver parent  ---> firefox as child
 		f.get("https://www.facebook.com/");
 		f.manage().window().maximize();
 		TakesScreenshot ts= (TakesScreenshot)f;//downcasting takescreenshot child ------> webdriver parent
